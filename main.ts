@@ -1,8 +1,14 @@
 #! /usr/bin/env node
 import inquirer from "inquirer";
+import chalk from "chalk";
+
+//Display a colourful welcome message
+console.log(chalk.bold.cyanBright("\n \t\t Amashta Rehmani - Student Management Program "));
+console.log("=" .repeat(60));
+
 const randomNumber: number = Math.floor(10000 + Math.random() * 90000)
 
-let myBalance: number = 0
+let myBalance: number = 15000
 let answer = await inquirer.prompt(
     [
         {
@@ -27,7 +33,7 @@ let answer = await inquirer.prompt(
 const tutionFee: {[key: string]: number} = {
     "MS.Office": 3000,
     "HTML": 5000,
-    "Javascript": 80000,
+    "Javascript": 8000,
     "Typescript": 12000,
     "Python": 15000
 };
